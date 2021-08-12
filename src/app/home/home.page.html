@@ -1,20 +1,895 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+
+          <ion-button>Back to home</ion-button>
+
+        </ion-col>
+        <ion-col>
+          <ion-button>Customer Care</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button>Track Order</ion-button>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
+ 
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+
+
+
+
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-button class="buttonf">
+    <ion-icon color="light" slot="start" name="menu-outline" routerLink="/home" style="margin-left: 2rem;"></ion-icon>
+  categories
+  </ion-button>
+  
+    <ion-icon color="light" slot="end" name="cart-outline" style="margin-right: 2rem;" routerLink="/cart"></ion-icon>
+  </ion-toolbar>
+  <ion-searchbar> </ion-searchbar>
+  
+</ion-header>
+
+<div class="hover">
+  <a href ="">Computer Accessories</a>
+  <a href ="">Computer Components</a>
+  <a href ="">Dekstop</a>
+  <a href ="">Gadgets</a>
+  <a href ="">Laptop</a>
+  <a href ="">Mobile & Accessories</a>
+  <a href ="">Printer</a>
+  <a href ="">Storage</a>
+
+</div>
+
+<ion-content [fullscreen]="true">
+<ion-slides  #slider loop="true" pager="true" [options]="slideOpts" (ionSlideTouchEnd)="slideChanged()" >
+  <ion-slide>
+    <img src="../../assets/icon/A4.png" />
+  </ion-slide>
+  <ion-slide>
+    <img src="../../assets/icon/A5.png" />
+  </ion-slide>
+  <ion-slide>
+    <img src="../../assets/icon/A6.png" />
+  </ion-slide>
+</ion-slides>
+
+<ion-card-content>
+<ion-grid class="grid1">
+  <ion-row>
+    <ion-card>
+    <img src="../../assets/icon/A1.png" />
+  </ion-card>
+  </ion-row>
+  <ion-row>
+    <ion-card>
+      <img src="../../assets/icon/A2.jpg" />
+    </ion-card>
+  </ion-row>
+</ion-grid>
+</ion-card-content>
+ 
+<ion-card-content>
+  <ion-card>
+<ion-grid class="grid2">
+  <ion-row>
+    <ion-col>
+      <img src="../../assets/icon/log1.png" />
+      Computer Accessories
+    </ion-col>
+    <ion-col>
+      <img src="../../assets/icon/log2.png" />
+      Computer Component
+    </ion-col>
+    <ion-col>
+      <img src="../../assets/icon/log3.png" />
+      Dekstop
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <img src="../../assets/icon/log4.png" />
+      Laptop
+    </ion-col>
+    <ion-col>
+      <img src="../../assets/icon/log5.png" />
+      Mobile & Accessories
+    </ion-col>
+    <ion-col>
+      <img src="../../assets/icon/log6.png" />
+      Gadgets
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <img src="../../assets/icon/log7.png" />
+      Ink & Tower
+    </ion-col>
+    <ion-col>
+      <img src="../../assets/icon/log8.png" />
+      Powerbank
+    </ion-col>
+    <ion-col>
+      <img src="../../assets/icon/log9.png" />
+      Printer
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <img src="../../assets/icon/log10.png" />
+      Storage
+    </ion-col>
+    <ion-col>
+      <img src="../../assets/icon/log11.png" />
+      Projectors
+    </ion-col>
+    <ion-col>
+      <img src="../../assets/icon/log12.png" />
+      Networks
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-card>
+</ion-card-content>
+
+<img src="../../assets/icon/A3.png" />
+
+<br>
+<br>
+<h>Shocking Sale!</h>
+
+<ion-card-content>
+  <ion-grid>
+    <ion-row>
+
+      <ion-col>
+        <ion-card>
+          01
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card>
+        02
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card>
+          03
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card>
+          04
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card-content>
+    
+<ion-card-content>
+  <ion-grid>
+    <ion-row>
+
+      <ion-col>
+      <img src="../../assets/icon/A9.png" />
+      Item 1
+      <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A9.png" />
+        Item 2
+        <p>Rm 2,899.00</p>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col>
+      <img src="../../assets/icon/A9.png" />
+      Item 3
+      <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A9.png" />
+      Item 4
+      <p>Rm 2,899.00</p>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col>
+      <img src="../../assets/icon/A9.png" />
+      Item 5
+      <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A9.png" />
+      Item 6
+      <p>Rm 2,899.00</p>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col>
+      <img src="../../assets/icon/A9.png" />
+      Item 7
+      <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A9.png" />
+      Item 8
+      <p>Rm 2,899.00</p>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col>
+      <img src="../../assets/icon/A9.png" />
+      Item 9
+      <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A9.png" />
+      Item 10
+      <p>Rm 2,899.00</p>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col>
+      <img src="../../assets/icon/A9.png" />
+      Item 11
+      <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A9.png" />
+        Item 12
+        <p>Rm 2,899.00</p>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <ion-button class="button1"> MORE SHOCKING SALE PRODUCTS! </ion-button>
+</ion-card-content>
+
+<ion-card-content>
+  <ion-grid>
+
+    <ion-row>
+      <img src="../../assets/icon/A4.png" />
+    </ion-row>
+    <ion-row>
+      <img src="../../assets/icon/A5.png" />
+    </ion-row>
+    <ion-row>
+      <img src="../../assets/icon/A6.png" />
+    </ion-row>
+
+  </ion-grid>
+</ion-card-content>
+
+<br><br><br>
+  <img src="../../assets/icon/A7.png" />
+  <br>
+  <br>
+  
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+  
+        <ion-col>
+        <img src="../../assets/icon/A8.jpg" />
+        Item 1
+        <p>Rm 2,899.00</p>
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/icon/A8.jpg" />
+          Item 2
+          <p>Rm 2,899.00</p>
+        </ion-col>
+  
+      </ion-row>
+  
+      <ion-row>
+  
+        <ion-col>
+          <img src="../../assets/icon/A8.jpg" />
+        Item 3
+        <p>Rm 2,899.00</p>
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/icon/A8.jpg" />
+        Item 4
+        <p>Rm 2,899.00</p>
+        </ion-col>
+  
+      </ion-row>
+  
+      <ion-row>
+  
+        <ion-col>
+          <img src="../../assets/icon/A8.jpg" />
+        Item 5
+        <p>Rm 2,899.00</p>
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/icon/A8.jpg" />
+        Item 6
+        <p>Rm 2,899.00</p>
+        </ion-col>
+  
+      </ion-row>
+  
+      <ion-row>
+  
+        <ion-col>
+          <img src="../../assets/icon/A8.jpg" />
+        Item 7
+        <p>Rm 2,899.00</p>
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/icon/A8.jpg" />
+        Item 8
+        <p>Rm 2,899.00</p>
+        </ion-col>
+  
+      </ion-row>
+  
+      <ion-row>
+  
+        <ion-col>
+          <img src="../../assets/icon/A8.jpg" />
+        Item 9
+        <p>Rm 2,899.00</p>
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/icon/A8.jpg" />
+        Item 10
+        <p>Rm 2,899.00</p>
+        </ion-col>
+  
+      </ion-row>
+  
+      <ion-row>
+  
+        <ion-col>
+          <img src="../../assets/icon/A8.jpg" />
+        Item 11
+        <p>Rm 2,899.00</p>
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/icon/A8.jpg" />
+          Item 12
+          <p>Rm 2,899.00</p>
+        </ion-col>
+  
+      </ion-row>
+    </ion-grid>
+    <br>
+    <br>
+ 
+  
+  
+    <ion-button class="button1"> MORE WEEKLY OFFER PRODUCTS! </ion-button>
+  </ion-card-content>
+  <br>
+  <br>
+  <ion-card-content>
+    <p1>Notebook Promotion</p1>
+
+<ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/Notebook1.png" />
+        Item 1
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/Notebook1.png" />
+        Item 2
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/Notebook1.png" />
+        Item 3
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/Notebook1.png" />
+        Item 4
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/Notebook1.png" />
+        Item 5
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/Notebook1.png" />
+        Item 6
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-button class="button1"> MORE NOTEBOOK Promotion PRODUCTS! </ion-button>
+  </ion-card-content>
+  <br>
+  <br>
+
+  <ion-card-content>
+    <p1>Hot Selling @ Monaliza</p1>
+
+<ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/A11.jpg" />
+        Item 1
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A11.jpg" />
+        Item 2
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/A11.jpg" />
+        Item 3
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A11.jpg" />
+        Item 4
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/A11.jpg" />
+        Item 5
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A11.jpg" />
+        Item 6
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/A11.jpg" />
+        Item 1
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A11.jpg" />
+        Item 2
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/A11.jpg" />
+        Item 3
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A11.jpg" />
+        Item 4
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/A11.jpg" />
+        Item 5
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A11.jpg" />
+        Item 6
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-button class="button1"> MORE WEEKLY OFFER PRODUCTS! </ion-button>
+  </ion-card-content>
+
+  <br>
+  <br>
+
+  <ion-card-content>
+    <p1>Recommended Items</p1>
+
+<ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 1
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 2
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 3
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 4
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 5
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 6
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 1
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 2
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 3
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 4
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 5
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 6
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 1
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 2
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 3
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 4
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 5
+        <p>Rm 2,899.00</p>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/icon/A15.png" />
+        Item 6
+        <p>Rm 2,899.00</p>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+
+  </ion-card-content>
+  <br>
+  <br>
+
+  <ion-card-content>
+    <p>Browse Produtc by brand</p>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/icon/B2.png" />
+        </ion-col>
+      </ion-row>
+
+      <p> view all available brands >> </p>
+    </ion-grid>
+  </ion-card-content>
+
+  <ion-card-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-icon name="happy-outline"  class="icon"> </ion-icon>
+      </ion-col>
+      <ion-col>
+        <p>Customer Love Us</p>
+        <p>Friendly Customer Service with affordable price</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="2">
+        <ion-icon name="boat-outline" class="icon"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <p>24 hour delivery</p>
+        <p>You can choose to have your item(s) deliver in 24 hour(Kota Bharu only)</p>
+      </ion-col>
+    </ion-row>
+
+    
+    <ion-row>
+      <ion-col size="2">
+        <ion-icon name="finger-print-outline"  class="icon"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <p>100% Secured Payment</p>
+        <p>Secured payment via FPX online payment system</p>
+      </ion-col>
+    </ion-row>
+
+    
+    <ion-row>
+      <ion-col size="2">
+        <ion-icon name="lock-closed-outline"  class="icon"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <p>We Protect Customer</p>
+        <p>Product purchsed is protected with warranty from provider</p>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </ion-card-content>
+
+  <ion-card-content>
+<p>Online store</p>
+<br>
+<a href="">My Account</a>
+<br>
+<a href="">Order History</a>
+<br>
+<a href="">Brands</a>
+<br>
+<br>
+<p>About Monaliza</p>
+<br>
+<a href="">About Us</a><br>
+<a href="">Shipping & Delivery</a><br>
+<a href="">Product Return & Warranty</a><br>
+<a href="">Customer Care</a><br>
+<a href="">Terms & Conditions</a><br>
+<a href="">Privacy Policy</a><br>
+<br>
+<br>
+<p>Contact Us</p>
+
+<p1>Monday to friday (9:00 AM - 6:00 PM)</p1><br>
+<p1>+6012-402 4010</p1><br>
+<p1>online@mona.com.my</p1><br>
+<br>
+<br>
+
+
+<p>Follow Us</p>
+<br>
+<ion-icon name="logo-facebook"></ion-icon>
+<a href="">Facebook</a><br>
+<ion-icon name="logo-instagram"></ion-icon>
+<a href="">Instagram</a><br>
+<ion-icon name="logo-twitter"></ion-icon>
+<a href="">Twitter</a><br>
+<ion-icon name="logo-youtube"></ion-icon>
+<a href="">Youtube</a><br>
+<br>
+
+<ion-row>
+  <ion-col>
+    <img src="../../assets/icon/B3.png" />
+  </ion-col>
+  <ion-col>
+    <img src="../../assets/icon/B4.png" />
+  </ion-col>
+</ion-row>
+<p>Get the latest update on upcoming new products from Monaliza.Hottest promotion deals every month & exciting activities related with gadget & computers</p>
+<br>
+<a href="">Branches Location >></a>
+<br>
+<br>
+<p>Saving Everyday @ Monaliza</p>
+<p1>Who does not like the best quality products at the most affordable price that you can ask for? At Monaliza, we are here to help you getting a best possible price for gadgets & IT accessories</p1>
+<br>
+<br>
+<p>WOW! Shopping Experience </p>
+<p1>Shop anytime, anywhere from your computer and mobile phone.We do the rest for you. With our quick and reliable delivery service,just sit back, relax and your package will cometo you.</p1>
+
+</ion-card-content>
+
+<ion-card-content>
+
+<p1>Payment method</p1><br><br>
+<img src="../../assets/icon/visa.png" class="last"/>
+<br>
+
+<p1>Shipping method</p1><br><br>
+<img src="../../assets/icon/ship.png" class="last"/>
+<br>
+<br>
+<p1>&copy; 2021 - Monaliza & Mastura Enterprise sdn. Bhd. (229171-W).</p1>
+<p1>All right reserved.</p1>
+<br>
+<p>Managed service by Aplikasi Niaga</p>
+
+
+</ion-card-content>
 </ion-content>
